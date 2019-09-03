@@ -21,4 +21,4 @@
 
 具体展现样式为如下：
 
-![](./demo.png)
+![](https://github.com/gavinhugo/jquery-plugin-pagination/blob/master/demo.PNG)
