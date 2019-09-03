@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <div id="demo">
+    </div>
+    <br />
+    <div id="demo1">
+    </div>
+    <br />
+    <div id="demo2">
+    </div>
+
+</body>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./jquery-plugin-pagination.js"></script>
+<script>
+
+    $('#demo').pagination({
+        page_size: 1,
+        num_display: 7,
+        current_page: 1,
+        callback: function (link, num, limit) {
+            return 0;
+        }
+    });
+
+    $('#demo1').pagination({
+        page_size: 1,
+        num_display: 5,
+        current_page: 4,
+        callback: function (link, num, limit) {
+            return 7;
+        }
+    });
+
+    $('#demo2').pagination({
+        page_size: 1,
+        num_display: 10,
+        current_page: 3,
+        callback: function (link, num, limit) {
+            return 1000;
+        }
+    });
+</script>
+
+</html>
